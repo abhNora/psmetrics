@@ -1,0 +1,37 @@
+Package: psmetrics
+Type: Package
+Title: Propensity Score Resemblance Metrics for Original and Synthetic Data
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Nora",
+             family = "Amama-BenHassun",
+             role = c("aut", "cre"),
+             email = "nora.amama@upc.edu"),
+      person(given = "Daniel",
+             family = "Fernández",
+             role = "aut"),
+      person(given = "Jordi",
+             family = "Cortés Martínez",
+             role = "aut"),
+      person(given = "Cecilio",
+             family = "Angulo",
+             role = "aut"))
+Description: Implements propensity score resemblance metrics for comparing
+    original data (OD) and synthetic data (SD), based on the methodology
+    presented in the paper "Propensity score resemblance metrics for synthetic
+    tabular data: calibration, power, and split-sample evaluation". The package
+    includes the metrics pMSE, SPECKS, and PO50, as well as a convenience
+    wrapper to compute them jointly with a consistent output format. The
+    implementation follows the split-sample evaluation strategy for SPECKS and
+    PO50 to reduce overfitting, while pMSE is computed using the full dataset.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    caret,
+    stats
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
