@@ -12,9 +12,16 @@ single call.
 
 ## Installation
 
+To install the package locally from the package directory:
+
 ```r
-# install.packages("devtools")
-devtools::install_local("path/to/psmetrics")
+remotes::install_local(".")
+```
+
+To install it from GitHub:
+
+```r
+remotes::install_github("abhNora/psmetrics")
 ```
 
 ## Example
@@ -30,8 +37,25 @@ compute_psr_metrics(OD, SD)
 compute_psr_metrics(OD, SD, include_threshold = TRUE, include_decision = TRUE)
 ```
 
+## Development workflow
+
+Install the development dependencies:
+
+```r
+install.packages(c("roxygen2", "remotes", "rcmdcheck"))
+```
+
+
 ## Generate documentation
 
 ```r
-roxygen2::roxygenise("path/to/psrmetrics")
+roxygen2::roxygenise()
 ```
+
+## Install the package locally and validate it:
+
+```r
+remotes::install_local(".")
+rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = c("--no-manual"))
+```
+
