@@ -66,15 +66,14 @@ rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = c("--no-manual"))
 
 ## Testing
 
-To run the tests:  
+To run the package tests locally:
 
 ```r
-# Install testthat if not already installed
-install.packages("testthat")
+# Install testing dependencies if needed
+install.packages(c("testthat", "rcmdcheck"))
 
-# Run tests
-devtools::test()
+# Run tests from the package root
+testthat::test_local()
 
-# Or using testthat directly
-testthat::test_dir("tests/testthat")
-```
+# Full package validation
+rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = c("--no-manual"))
