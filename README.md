@@ -1,14 +1,19 @@
 # psmetrics
 
-`psmetrics` is an R package to compute three propensity score-based utility
-metrics for comparing original data (OD) and synthetic data (SD):
+`psmetrics` is an R package to compute three propensity score-based utility metrics for comparing original data (OD) and synthetic data (SD):
 
 - `pMSE`
 - `SPECKS`
 - `PO50`
 
-It also provides `evaluate_synthetic()` to compute all three metrics in a
-single call.
+It also provides `evaluate_synthetic()` to compute all three metrics in a single call.
+
+## Authors  
+
+- [Nora Amama-BenHassun](https://orcid.org/0009-0004-7598-0100)
+- [Daniel Fernández](https://orcid.org/0000-0003-0012-2094)
+- [Jordi Cortés](https://orcid.org/0000-0002-3764-0795)
+- [Cecilio Angulo](https://orcid.org/0000-0001-9589-8199)
 
 ## Installation
 
@@ -59,3 +64,17 @@ remotes::install_local(".")
 rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = c("--no-manual"))
 ```
 
+## Testing
+
+To run the tests:  
+
+```r
+# Install testthat if not already installed
+install.packages("testthat")
+
+# Run tests
+devtools::test()
+
+# Or using testthat directly
+testthat::test_dir("tests/testthat")
+```
