@@ -77,3 +77,6 @@ testthat::test_local()
 
 # Full package validation
 rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = c("--no-manual"))
+
+## Funding
+
