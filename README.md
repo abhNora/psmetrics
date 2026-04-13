@@ -15,6 +15,10 @@ It also provides `evaluate_synthetic()` to compute all three metrics in a single
 - [Jordi Cortés](https://orcid.org/0000-0002-3764-0795)
 - [Cecilio Angulo](https://orcid.org/0000-0001-9589-8199)
 
+## Acknowledgments  
+
+This research has been partly supported by "Siemens Energy AI Chair: Energy Sustainability for a Decarbonized Society 5.0" (TSI-100930-2023-5), funded by the Secretary of State for Digitalization and Artificial Intelligence through the ENIA 2022 Chairs call, and co-funded by the European Union-Next Generation EU. Funding support is also acknowledge to the "Generation of Reliable Synthetic Health Data for Federated Learning in Secure Data Spaces" Research Project (PID2022-141045OB-C42 (AEI/ERDF, EU)) funded by MCIN/AEI/ 10.13039/501100011033 and by "ERDF A way of making Europe" (European Union).
+
 ## Installation
 
 To install the package locally from the package directory:
