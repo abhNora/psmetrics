@@ -2,36 +2,31 @@ Package: psmetrics
 Type: Package
 Title: Propensity Score Resemblance Metrics for Original and Synthetic Data
 Version: 0.1.0
-Authors@R: 
-    c(person(given = "Nora",
-             family = "Amama-BenHassun",
-             role = c("aut", "cre"),
-             email = "nora.amama@upc.edu"),
-      person(given = "Daniel",
-             family = "Fernández",
-             role = "aut"),
-      person(given = "Jordi",
-             family = "Cortés Martínez",
-             role = "aut"),
-      person(given = "Cecilio",
-             family = "Angulo",
-             role = "aut"))
-Description: Implements propensity score resemblance metrics for comparing
-    original data (OD) and synthetic data (SD), based on the methodology
-    presented in the paper "Propensity score resemblance metrics for synthetic
-    tabular data: calibration, power, and split-sample evaluation". The package
-    includes the metrics pMSE, SPECKS, and PO50, as well as a convenience
-    wrapper to compute them jointly with a consistent output format. The
-    implementation follows the split-sample evaluation strategy for SPECKS and
-    PO50 to reduce overfitting, while pMSE is computed using the full dataset.
+Authors@R: c(
+    person("Nora", "Amama-BenHassun", email = "nora.amama@upc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0004-7598-0100")),
+    person("Daniel", "Fernández", role = "aut",
+           comment = c(ORCID = "0000-0003-0012-2094")),
+    person("Jordi", "Cortés Martínez", role = "aut",
+           comment = c(ORCID = "0000-0002-3764-0795")),
+    person("Cecilio", "Angulo", role = "aut",
+           comment = c(ORCID = "0000-0001-9589-8199"))
+)
+Description: Computes propensity score resemblance metrics for comparing
+    original and synthetic tabular data. Implements pMSE, SPECKS and PO50,
+    together with a wrapper to compute the metrics jointly. The methodology
+    follows split-sample evaluation for SPECKS and PO50 to reduce overfitting,
+    while pMSE is computed using the full data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+URL: https://github.com/abhNora/psmetrics
+BugReports: https://github.com/abhNora/psmetrics/issues
 Imports:
     caret,
     stats
 Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
