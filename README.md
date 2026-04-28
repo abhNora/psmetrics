@@ -1,23 +1,14 @@
 # psmetrics
 
-`psmetrics` is an R package to compute three propensity score-based utility metrics for comparing original data (OD) and synthetic data (SD):
+`psmetrics` is an R package to compute three propensity score-based utility
+metrics for comparing original data (OD) and synthetic data (SD):
 
 - `pMSE`
 - `SPECKS`
 - `PO50`
 
-It also provides `evaluate_synthetic()` to compute all three metrics in a single call.
-
-## Authors  
-
-- [Nora Amama-BenHassun](https://orcid.org/0009-0004-7598-0100)
-- [Daniel Fernández](https://orcid.org/0000-0003-0012-2094)
-- [Jordi Cortés](https://orcid.org/0000-0002-3764-0795)
-- [Cecilio Angulo](https://orcid.org/0000-0001-9589-8199)
-
-## Acknowledgments  
-
-This research has been partly supported by "Siemens Energy AI Chair: Energy Sustainability for a Decarbonized Society 5.0" (TSI-100930-2023-5), funded by the Secretary of State for Digitalization and Artificial Intelligence through the ENIA 2022 Chairs call, and co-funded by the European Union-Next Generation EU. Funding support is also acknowledge to the "Generation of Reliable Synthetic Health Data for Federated Learning in Secure Data Spaces" Research Project (PID2022-141045OB-C42 (AEI/ERDF, EU)) funded by MCIN/AEI/ 10.13039/501100011033 and by "ERDF A way of making Europe" (European Union).
+It also provides `evaluate_synthetic()` to compute all three metrics in a
+single call.
 
 ## Installation
 
@@ -67,19 +58,4 @@ roxygen2::roxygenise()
 remotes::install_local(".")
 rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = c("--no-manual"))
 ```
-
-## Testing
-
-To run the package tests locally:
-
-```r
-# Install testing dependencies if needed
-install.packages(c("testthat", "rcmdcheck"))
-
-# Run tests from the package root
-testthat::test_local()
-
-# Full package validation
-rcmdcheck::rcmdcheck(args = c("--no-manual"), build_args = c("--no-manual"))
-
 

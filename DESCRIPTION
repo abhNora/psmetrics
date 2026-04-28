@@ -11,12 +11,10 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-3764-0795")),
     person("Cecilio", "Angulo", role = "aut",
            comment = c(ORCID = "0000-0001-9589-8199"))
-)
+    )
 Description: Computes propensity score resemblance metrics for comparing
     original and synthetic tabular data. Implements pMSE, SPECKS and PO50,
-    together with a wrapper to compute the metrics jointly. The methodology
-    follows split-sample evaluation for SPECKS and PO50 to reduce overfitting,
-    while pMSE is computed using the full data.
+    together with a wrapper to compute the metrics jointly.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -29,4 +27,4 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
